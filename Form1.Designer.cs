@@ -73,9 +73,10 @@
             this.textBoxDeposit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDeposit.Location = new System.Drawing.Point(17, 34);
             this.textBoxDeposit.Name = "textBoxDeposit";
-            this.textBoxDeposit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxDeposit.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBoxDeposit.Size = new System.Drawing.Size(198, 32);
             this.textBoxDeposit.TabIndex = 2;
+            this.textBoxDeposit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label4
             // 
@@ -102,9 +103,10 @@
             this.textBoxWithdraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxWithdraw.Location = new System.Drawing.Point(20, 40);
             this.textBoxWithdraw.Name = "textBoxWithdraw";
-            this.textBoxWithdraw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxWithdraw.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBoxWithdraw.Size = new System.Drawing.Size(198, 32);
             this.textBoxWithdraw.TabIndex = 5;
+            this.textBoxWithdraw.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // buttonDeposit
             // 
@@ -115,6 +117,7 @@
             this.buttonDeposit.TabIndex = 11;
             this.buttonDeposit.Text = "Confirm";
             this.buttonDeposit.UseVisualStyleBackColor = true;
+            this.buttonDeposit.Click += new System.EventHandler(this.buttonDeposit_Click);
             // 
             // buttonWithdrow
             // 
@@ -125,6 +128,7 @@
             this.buttonWithdrow.TabIndex = 12;
             this.buttonWithdrow.Text = "Confirm";
             this.buttonWithdrow.UseVisualStyleBackColor = true;
+            this.buttonWithdrow.Click += new System.EventHandler(this.buttonWithdrow_Click);
             // 
             // groupBox1
             // 
@@ -174,15 +178,17 @@
             this.buttonQuery.TabIndex = 13;
             this.buttonQuery.Text = "Show Balance";
             this.buttonQuery.UseVisualStyleBackColor = true;
+            this.buttonQuery.Click += new System.EventHandler(this.buttonQuery_Click);
             // 
             // textBoxBalance
             // 
             this.textBoxBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBalance.Location = new System.Drawing.Point(14, 35);
             this.textBoxBalance.Name = "textBoxBalance";
-            this.textBoxBalance.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxBalance.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBoxBalance.Size = new System.Drawing.Size(263, 32);
             this.textBoxBalance.TabIndex = 12;
+            this.textBoxBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
@@ -205,6 +211,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Encapsulation Example";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
