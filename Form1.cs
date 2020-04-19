@@ -10,11 +10,30 @@ using System.Windows.Forms;
 
 namespace EncapsulationDemo
 {
-    public partial class Form1 : Form
+    public partial class FormHome : Form
     {
-        public Form1()
+        public FormHome()
         {
             InitializeComponent();
         }
+        //Variable & Method Declaration Starts.
+        private double balance = 0;
+        public void Deposit(double n)
+        {
+            balance += n;
+        }
+        public void Withdraw(double n)
+        {
+            balance -= n;
+        }
+        public double GetBalance()
+        {
+            return balance;
+        }
+        //Variable & Method Declaration Ends.
+
+
+
+
     }
 }
